@@ -1,0 +1,41 @@
+.primera_pagina{
+    padding: 50px;
+    margin: 0;
+    background-image: url('Images/Fondo-pizza.jpg');
+    background-size: cover;
+  
+}
+
+img {
+    display: block;
+    margin: 0;  
+    
+}
+#Titulo{
+    margin-top: 10px;
+    font-size: 30cqmax;
+    font-size: 25cqmin;
+    color:white; 
+}
+#Descripcion1{
+    font-size: 12cqmax;
+    font-size: 6cqmin;
+    color:white; 
+    text-align: left;
+    margin-right: 40%;
+    
+
+}
+#Descubre {
+    display: block;
+    text-align: center;
+    font-size: 12cqmax;
+    font-size: 6cqmin;
+    color:white; 
+    margin-top: 2%;
+}
+.segunda_pagina{
+    padding: 25%;
+    background-color: grey;
+   
+}
