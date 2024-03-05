@@ -1,41 +1,64 @@
-.primera_pagina{
-    padding: 50px;
-    margin: 0;
-    background-image: url('Images/Fondo-pizza.jpg');
+:root{
+    --padding-container:100px 0;
+    color: white;
+    font-size: 20px;
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
     background-size: cover;
-  
 }
 
-img {
-    display: block;
-    margin: 0;  
-    
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+width: 90%;
+max-width: 1200px;
+margin: 0 auto;
+overflow: hidden;   
+padding: var(--padding-container);
+}
+.primera_pagina{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+}
+.primera_pagina ::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg,#0000008c,0%,#0000008c 100%),url(Images/Fondo-pizza.jpg);
+    background-size: cover;
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 75% 100%, 25% 100%, 0 80%);
+}
+.div{
+    --padding-container:0;
 }
 #Titulo{
-    margin-top: 10px;
-    font-size: 30cqmax;
-    font-size: 25cqmin;
-    color:white; 
+    color: white;
+    align-items: center;
+    position: static;
+    display: flex;
+    font-size: 100px;
+    
 }
 #Descripcion1{
-    font-size: 12cqmax;
-    font-size: 6cqmin;
-    color:white; 
-    text-align: left;
-    margin-right: 40%;
-    
-
+    color: white;
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+    margin-right: 60%;
 }
-#Descubre {
-    display: block;
-    text-align: center;
-    font-size: 12cqmax;
-    font-size: 6cqmin;
-    color:white; 
-    margin-top: 2%;
-}
-.segunda_pagina{
-    padding: 25%;
-    background-color: grey;
-   
+#Descubre{
+     color: white;
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+    margin-left: 47%;   
+    margin-right: 42%;
 }
